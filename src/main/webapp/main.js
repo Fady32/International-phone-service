@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var gridDiv = document.querySelector('#myGrid');
     new agGrid.Grid(gridDiv, gridOptions);
 
-    agGrid.simpleHttpRequest({url: 'http://localhost:9090/getAllPhones',})
+    agGrid.simpleHttpRequest({url: 'http://localhost:8080/getAllPhones',})
         .then(function (data) {
             gridOptions.api.setRowData(data);
         });
